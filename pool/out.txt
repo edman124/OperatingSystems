@@ -1,0 +1,472 @@
+STARTING test group: counter task ordering with 1 threads and 10 tasks
+starting thread0
+in runtask 
+submitting  inc#0
+submitting  inc#1
+submitting  inc#2
+submitting  inc#3
+submitting  inc#4
+submitting  inc#5
+submitting  inc#6
+submitting  inc#7
+submitting  inc#8
+submitting  inc#9
+before waitfortask 
+before barrier clean up
+PASSED: counter task ordering with 1 threads and 10 tasks: correct number of counter tasks run
+PASSED: counter task ordering with 1 threads and 10 tasks: correct number of counter tasks deleted
+result[0] == 0
+result[1] == 1
+result[2] == 2
+result[3] == 3
+result[4] == 4
+result[5] == 5
+result[6] == 6
+result[7] == 7
+result[8] == 8
+result[9] == 9
+PASSED: counter task ordering with 1 threads and 10 tasks: task inc#0 assigned index #0
+PASSED: counter task ordering with 1 threads and 10 tasks: task inc#1 assigned index #1
+PASSED: counter task ordering with 1 threads and 10 tasks: task inc#2 assigned index #2
+PASSED: counter task ordering with 1 threads and 10 tasks: task inc#3 assigned index #3
+PASSED: counter task ordering with 1 threads and 10 tasks: task inc#4 assigned index #4
+PASSED: counter task ordering with 1 threads and 10 tasks: task inc#5 assigned index #5
+PASSED: counter task ordering with 1 threads and 10 tasks: task inc#6 assigned index #6
+PASSED: counter task ordering with 1 threads and 10 tasks: task inc#7 assigned index #7
+PASSED: counter task ordering with 1 threads and 10 tasks: task inc#8 assigned index #8
+PASSED: counter task ordering with 1 threads and 10 tasks: task inc#9 assigned index #9
+PASSED: counter task ordering with 1 threads and 10 tasks: one of first 1 results is 0
+PASSED test group: counter task ordering with 1 threads and 10 tasks
+STARTING test group: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order
+starting thread0
+in runtask 
+submitting  inc#0
+submitting  inc#1
+submitting  inc#2
+submitting  inc#3
+submitting  inc#4
+submitting  inc#5
+submitting  inc#6
+submitting  inc#7
+submitting  inc#8
+submitting  inc#9
+before waitfortask 
+before barrier clean up
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: correct number of counter tasks run
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: correct number of counter tasks deleted
+result[0] == 0
+result[1] == 1
+result[2] == 2
+result[3] == 3
+result[4] == 4
+result[5] == 5
+result[6] == 6
+result[7] == 7
+result[8] == 8
+result[9] == 9
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: task inc#0 assigned index #0
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: task inc#1 assigned index #1
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: task inc#2 assigned index #2
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: task inc#3 assigned index #3
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: task inc#4 assigned index #4
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: task inc#5 assigned index #5
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: task inc#6 assigned index #6
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: task inc#7 assigned index #7
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: task inc#8 assigned index #8
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: task inc#9 assigned index #9
+PASSED: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order: one of first 1 results is 0
+PASSED test group: counter task ordering with 1 threads and 10 tasks, and waiting for the counter tasks in reverse order
+STARTING test group: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier
+starting thread0
+in runtask 
+submitting  inc#0
+submitting  inc#1
+submitting  inc#2
+submitting  inc#3
+submitting  inc#4
+submitting  inc#5
+submitting  inc#6
+submitting  inc#7
+submitting  inc#8
+submitting  inc#9
+before waitfortask 
+before barrier clean up
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: correct number of counter tasks run
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: correct number of counter tasks deleted
+result[0] == 0
+result[1] == 1
+result[2] == 2
+result[3] == 3
+result[4] == 4
+result[5] == 5
+result[6] == 6
+result[7] == 7
+result[8] == 8
+result[9] == 9
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: task inc#0 assigned index #0
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: task inc#1 assigned index #1
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: task inc#2 assigned index #2
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: task inc#3 assigned index #3
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: task inc#4 assigned index #4
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: task inc#5 assigned index #5
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: task inc#6 assigned index #6
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: task inc#7 assigned index #7
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: task inc#8 assigned index #8
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: task inc#9 assigned index #9
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: one of first 1 results is 0
+PASSED test group: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier
+STARTING test group: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order
+starting thread0
+in runtask 
+submitting  inc#0
+submitting  inc#1
+submitting  inc#2
+submitting  inc#3
+submitting  inc#4
+submitting  inc#5
+submitting  inc#6
+submitting  inc#7
+submitting  inc#8
+submitting  inc#9
+before waitfortask 
+before barrier clean up
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: correct number of counter tasks run
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: correct number of counter tasks deleted
+result[0] == 0
+result[1] == 1
+result[2] == 2
+result[3] == 3
+result[4] == 4
+result[5] == 5
+result[6] == 6
+result[7] == 7
+result[8] == 8
+result[9] == 9
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: task inc#0 assigned index #0
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: task inc#1 assigned index #1
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: task inc#2 assigned index #2
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: task inc#3 assigned index #3
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: task inc#4 assigned index #4
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: task inc#5 assigned index #5
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: task inc#6 assigned index #6
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: task inc#7 assigned index #7
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: task inc#8 assigned index #8
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: task inc#9 assigned index #9
+PASSED: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: one of first 1 results is 0
+PASSED test group: counter task ordering with 1 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order
+STARTING test group: counter task ordering with 10 threads and 5 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+starting thread2
+in runtask 
+starting thread3
+in runtask 
+starting thread4
+in runtask 
+starting thread5
+in runtask 
+starting thread6
+in runtask 
+starting thread7
+in runtask 
+starting thread8
+in runtask 
+starting thread9
+in runtask 
+submitting  inc#0
+submitting  inc#1
+submitting  inc#2
+submitting  inc#3
+submitting  inc#4
+before waitfortask 
+before barrier clean up
+PASSED: counter task ordering with 10 threads and 5 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: counter task ordering with 10 threads and 5 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: correct number of counter tasks run
+PASSED: counter task ordering with 10 threads and 5 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: correct number of counter tasks deleted
+result[0] == 0
+result[1] == 1
+result[2] == 2
+result[3] == 3
+result[4] == 4
+PASSED: counter task ordering with 10 threads and 5 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: one of first 5 results is 0
+PASSED test group: counter task ordering with 10 threads and 5 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order
+STARTING test group: counter task ordering with 2 threads and 10 tasks
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+submitting  inc#0
+submitting  inc#1
+submitting  inc#2
+submitting  inc#3
+submitting  inc#4
+submitting  inc#5
+submitting  inc#6
+submitting  inc#7
+submitting  inc#8
+submitting  inc#9
+before waitfortask 
+before barrier clean up
+PASSED: counter task ordering with 2 threads and 10 tasks: correct number of counter tasks run
+PASSED: counter task ordering with 2 threads and 10 tasks: correct number of counter tasks deleted
+result[0] == 0
+result[1] == 1
+result[2] == 2
+result[3] == 3
+result[4] == 4
+result[5] == 5
+result[6] == 6
+result[7] == 7
+result[8] == 8
+result[9] == 9
+PASSED: counter task ordering with 2 threads and 10 tasks: one of first 2 results is 0
+PASSED test group: counter task ordering with 2 threads and 10 tasks
+STARTING test group: counter task ordering with 2 threads and 10 tasks, and waiting for the counter tasks in reverse order
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+submitting  inc#0
+submitting  inc#1
+submitting  inc#2
+submitting  inc#3
+submitting  inc#4
+submitting  inc#5
+submitting  inc#6
+submitting  inc#7
+submitting  inc#8
+submitting  inc#9
+before waitfortask 
+before barrier clean up
+PASSED: counter task ordering with 2 threads and 10 tasks, and waiting for the counter tasks in reverse order: correct number of counter tasks run
+PASSED: counter task ordering with 2 threads and 10 tasks, and waiting for the counter tasks in reverse order: correct number of counter tasks deleted
+result[0] == 0
+result[1] == 1
+result[2] == 2
+result[3] == 3
+result[4] == 4
+result[5] == 5
+result[6] == 6
+result[7] == 7
+result[8] == 8
+result[9] == 9
+PASSED: counter task ordering with 2 threads and 10 tasks, and waiting for the counter tasks in reverse order: one of first 2 results is 0
+PASSED test group: counter task ordering with 2 threads and 10 tasks, and waiting for the counter tasks in reverse order
+STARTING test group: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+submitting  inc#0
+submitting  inc#1
+submitting  inc#2
+submitting  inc#3
+submitting  inc#4
+submitting  inc#5
+submitting  inc#6
+submitting  inc#7
+submitting  inc#8
+submitting  inc#9
+before waitfortask 
+before barrier clean up
+PASSED: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: correct number of counter tasks run
+PASSED: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: correct number of counter tasks deleted
+result[0] == 0
+result[1] == 1
+result[2] == 2
+result[3] == 3
+result[4] == 4
+result[5] == 5
+result[6] == 6
+result[7] == 7
+result[8] == 8
+result[9] == 9
+PASSED: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier: one of first 2 results is 0
+PASSED test group: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier
+STARTING test group: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+submitting  inc#0
+submitting  inc#1
+submitting  inc#2
+submitting  inc#3
+submitting  inc#4
+submitting  inc#5
+submitting  inc#6
+submitting  inc#7
+submitting  inc#8
+submitting  inc#9
+before waitfortask 
+before barrier clean up
+PASSED: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: correct number of counter tasks run
+PASSED: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: correct number of counter tasks deleted
+result[0] == 0
+result[1] == 1
+result[2] == 2
+result[3] == 3
+result[4] == 4
+result[5] == 5
+result[6] == 6
+result[7] == 7
+result[8] == 8
+result[9] == 9
+PASSED: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: one of first 2 results is 0
+PASSED test group: counter task ordering with 2 threads and 10 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order
+STARTING test group: counter task ordering with 4 threads and 40 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+starting thread2
+in runtask 
+starting thread3
+in runtask 
+submitting  inc#0
+submitting  inc#1
+submitting  inc#2
+submitting  inc#3
+submitting  inc#4
+submitting  inc#5
+submitting  inc#6
+submitting  inc#7
+submitting  inc#8
+submitting  inc#9
+submitting  inc#10
+submitting  inc#11
+submitting  inc#12
+submitting  inc#13
+submitting  inc#14
+submitting  inc#15
+submitting  inc#16
+submitting  inc#17
+submitting  inc#18
+submitting  inc#19
+submitting  inc#20
+submitting  inc#21
+submitting  inc#22
+submitting  inc#23
+submitting  inc#24
+submitting  inc#25
+submitting  inc#26
+submitting  inc#27
+submitting  inc#28
+submitting  inc#29
+submitting  inc#30
+submitting  inc#31
+submitting  inc#32
+submitting  inc#33
+submitting  inc#34
+submitting  inc#35
+submitting  inc#36
+submitting  inc#37
+submitting  inc#38
+submitting  inc#39
+before waitfortask 
+before barrier clean up
+PASSED: counter task ordering with 4 threads and 40 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: counter task ordering with 4 threads and 40 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: correct number of counter tasks run
+PASSED: counter task ordering with 4 threads and 40 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: correct number of counter tasks deleted
+result[0] == 0
+result[1] == 1
+result[2] == 2
+result[3] == 3
+result[4] == 4
+result[5] == 5
+result[6] == 6
+result[7] == 7
+result[8] == 8
+result[9] == 9
+result[10] == 10
+result[11] == 11
+result[12] == 12
+result[13] == 13
+result[14] == 14
+result[15] == 15
+result[16] == 16
+result[17] == 17
+result[18] == 18
+result[19] == 19
+result[20] == 20
+result[21] == 21
+result[22] == 22
+result[23] == 23
+result[24] == 24
+result[25] == 25
+result[26] == 26
+result[27] == 27
+result[28] == 28
+result[29] == 29
+result[30] == 30
+result[31] == 31
+result[32] == 32
+result[33] == 33
+result[34] == 34
+result[35] == 35
+result[36] == 36
+result[37] == 37
+result[38] == 38
+result[39] == 39
+PASSED: counter task ordering with 4 threads and 40 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order: one of first 4 results is 0
+PASSED test group: counter task ordering with 4 threads and 40 tasks, making sure counter tasks are submitted while other tasks are running using a barrier, and waiting for the counter tasks in reverse order
+STARTING test group: waiting for 1 tasks from tasks submitted later with 2 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+PASSED: waiting for 1 tasks from tasks submitted later with 2 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: waiting for 1 tasks from tasks submitted later with 2 threads: successfully waited for task empty#0
+PASSED: waiting for 1 tasks from tasks submitted later with 2 threads: task empty#0 was deleted
+PASSED: waiting for 1 tasks from tasks submitted later with 2 threads: tasks waiting on barrier run correct number of times
+PASSED test group: waiting for 1 tasks from tasks submitted later with 2 threads
+STARTING test group: waiting for 2 tasks from tasks submitted later with 3 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+starting thread2
+in runtask 
+PASSED: waiting for 2 tasks from tasks submitted later with 3 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: waiting for 2 tasks from tasks submitted later with 3 threads: successfully waited for task empty#0
+PASSED: waiting for 2 tasks from tasks submitted later with 3 threads: task empty#0 was deleted
+PASSED: waiting for 2 tasks from tasks submitted later with 3 threads: successfully waited for task empty#1
+PASSED: waiting for 2 tasks from tasks submitted later with 3 threads: task empty#1 was deleted
+PASSED: waiting for 2 tasks from tasks submitted later with 3 threads: tasks waiting on barrier run correct number of times
+PASSED test group: waiting for 2 tasks from tasks submitted later with 3 threads
+STARTING test group: submitting 10 tasks from 2 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+PASSED: submitting 10 tasks from 2 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: submitting 10 tasks from 2 threads: correct number of counter tasks (submitted from other tasks) run
+PASSED test group: submitting 10 tasks from 2 threads
+STARTING test group: submitting 10000 tasks from 2 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+PASSED: submitting 10000 tasks from 2 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: submitting 10000 tasks from 2 threads: correct number of counter tasks (submitted from other tasks) run
+PASSED test group: submitting 10000 tasks from 2 threads
+STARTING test group: submitting 10000 tasks from 4 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+starting thread2
+in runtask 
+starting thread3
+in runtask 
+PASSED: submitting 10000 tasks from 4 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: submitting 10000 tasks from 4 threads: correct number of counter tasks (submitted from other tasks) run
+PASSED test group: submitting 10000 tasks from 4 threads
+--RESULT SUMMARY--
+passed 15 test groups and failed 0 test groups

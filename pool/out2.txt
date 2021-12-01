@@ -1,0 +1,163 @@
+STARTING test group: cancelling 1 tasks from tasks running earlier with 1 threads
+starting thread0
+in runtask 
+PASSED: cancelling 1 tasks from tasks running earlier with 1 threads: cancelling task empty#0 succeeded
+PASSED: cancelling 1 tasks from tasks running earlier with 1 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: cancelling 1 tasks from tasks running earlier with 1 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+FAILED: cancelling 1 tasks from tasks running earlier with 1 threads: task empty#0 destroyed
+FAILED test group: cancelling 1 tasks from tasks running earlier with 1 threads
+STARTING test group: cancelling 2 tasks from tasks running earlier with 2 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+PASSED: cancelling 2 tasks from tasks running earlier with 2 threads: cancelling task empty#0 succeeded
+PASSED: cancelling 2 tasks from tasks running earlier with 2 threads: cancelling task empty#1 succeeded
+PASSED: cancelling 2 tasks from tasks running earlier with 2 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: cancelling 2 tasks from tasks running earlier with 2 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+FAILED: cancelling 2 tasks from tasks running earlier with 2 threads: task empty#0 destroyed
+FAILED: cancelling 2 tasks from tasks running earlier with 2 threads: task empty#1 destroyed
+FAILED test group: cancelling 2 tasks from tasks running earlier with 2 threads
+STARTING test group: cancelling 10 tasks from tasks running earlier with 1 threads
+starting thread0
+in runtask 
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: cancelling task empty#0 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: cancelling task empty#1 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: cancelling task empty#2 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: cancelling task empty#3 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: cancelling task empty#4 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: cancelling task empty#5 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: cancelling task empty#6 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: cancelling task empty#7 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: cancelling task empty#8 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: cancelling task empty#9 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: cancelling 10 tasks from tasks running earlier with 1 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+FAILED: cancelling 10 tasks from tasks running earlier with 1 threads: task empty#0 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 1 threads: task empty#1 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 1 threads: task empty#2 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 1 threads: task empty#3 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 1 threads: task empty#4 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 1 threads: task empty#5 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 1 threads: task empty#6 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 1 threads: task empty#7 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 1 threads: task empty#8 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 1 threads: task empty#9 destroyed
+FAILED test group: cancelling 10 tasks from tasks running earlier with 1 threads
+STARTING test group: cancelling 10 tasks from tasks running earlier with 4 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+starting thread2
+in runtask 
+starting thread3
+in runtask 
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: cancelling task empty#0 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: cancelling task empty#1 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: cancelling task empty#2 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: cancelling task empty#3 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: cancelling task empty#4 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: cancelling task empty#5 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: cancelling task empty#6 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: cancelling task empty#7 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: cancelling task empty#8 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: cancelling task empty#9 succeeded
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED: cancelling 10 tasks from tasks running earlier with 4 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+FAILED: cancelling 10 tasks from tasks running earlier with 4 threads: task empty#0 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 4 threads: task empty#1 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 4 threads: task empty#2 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 4 threads: task empty#3 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 4 threads: task empty#4 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 4 threads: task empty#5 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 4 threads: task empty#6 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 4 threads: task empty#7 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 4 threads: task empty#8 destroyed
+FAILED: cancelling 10 tasks from tasks running earlier with 4 threads: task empty#9 destroyed
+FAILED test group: cancelling 10 tasks from tasks running earlier with 4 threads
+STARTING test group: cancelling 1 tasks which already ran from 1 threads
+starting thread0
+in runtask 
+PASSED: cancelling 1 tasks which already ran from 1 threads: cancelling task empty#0 which should have already finished returned false
+PASSED: cancelling 1 tasks which already ran from 1 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED test group: cancelling 1 tasks which already ran from 1 threads
+STARTING test group: cancelling 1 tasks which already ran from 2 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+PASSED: cancelling 1 tasks which already ran from 2 threads: cancelling task empty#0 which should have already finished returned false
+PASSED: cancelling 1 tasks which already ran from 2 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED test group: cancelling 1 tasks which already ran from 2 threads
+STARTING test group: cancelling 2 tasks which already ran from 2 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+PASSED: cancelling 2 tasks which already ran from 2 threads: cancelling task empty#0 which should have already finished returned false
+PASSED: cancelling 2 tasks which already ran from 2 threads: cancelling task empty#1 which should have already finished returned false
+PASSED: cancelling 2 tasks which already ran from 2 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED test group: cancelling 2 tasks which already ran from 2 threads
+STARTING test group: cancelling 10 tasks which already ran from 1 threads
+starting thread0
+in runtask 
+PASSED: cancelling 10 tasks which already ran from 1 threads: cancelling task empty#0 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 1 threads: cancelling task empty#1 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 1 threads: cancelling task empty#2 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 1 threads: cancelling task empty#3 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 1 threads: cancelling task empty#4 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 1 threads: cancelling task empty#5 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 1 threads: cancelling task empty#6 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 1 threads: cancelling task empty#7 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 1 threads: cancelling task empty#8 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 1 threads: cancelling task empty#9 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 1 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED test group: cancelling 10 tasks which already ran from 1 threads
+STARTING test group: cancelling 10 tasks which already ran from 2 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+PASSED: cancelling 10 tasks which already ran from 2 threads: cancelling task empty#0 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 2 threads: cancelling task empty#1 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 2 threads: cancelling task empty#2 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 2 threads: cancelling task empty#3 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 2 threads: cancelling task empty#4 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 2 threads: cancelling task empty#5 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 2 threads: cancelling task empty#6 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 2 threads: cancelling task empty#7 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 2 threads: cancelling task empty#8 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 2 threads: cancelling task empty#9 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 2 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED test group: cancelling 10 tasks which already ran from 2 threads
+STARTING test group: cancelling 10 tasks which already ran from 4 threads
+starting thread0
+in runtask 
+starting thread1
+in runtask 
+starting thread2
+in runtask 
+starting thread3
+in runtask 
+PASSED: cancelling 10 tasks which already ran from 4 threads: cancelling task empty#0 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 4 threads: cancelling task empty#1 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 4 threads: cancelling task empty#2 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 4 threads: cancelling task empty#3 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 4 threads: cancelling task empty#4 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 4 threads: cancelling task empty#5 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 4 threads: cancelling task empty#6 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 4 threads: cancelling task empty#7 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 4 threads: cancelling task empty#8 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 4 threads: cancelling task empty#9 which should have already finished returned false
+PASSED: cancelling 10 tasks which already ran from 4 threads: tasks waiting on barrier (used to make sure some tasks are submitted after other tasks run in parallel) run correct number of times
+PASSED test group: cancelling 10 tasks which already ran from 4 threads
+starting thread0
+in runtask 
+STARTING test group: pausing stops chain of task-submitting tasks with 1 and 1 inital tasks
+before DoSubmit
+in pause
+pause has acquired lock
+PASSED: pausing stops chain of task-submitting tasks with 1 and 1 inital tasks: no new tasks started after pausing (0)
+PASSED: pausing stops chain of task-submitting tasks with 1 and 1 inital tasks: no new tasks started after pausing (1)
+PASSED: pausing stops chain of task-submitting tasks with 1 and 1 inital tasks: no new tasks started after pausing (2)

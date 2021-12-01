@@ -1,0 +1,11 @@
+Running test group for simple open+read: path=/gamecopy.txt:
+    opening /gamecopy.txt: passed.
+    path=/gamecopy.txt: contents: passed.
+    path=/gamecopy.txt: size: passed.
+    path=/gamecopy.txt: no writing from past end of file: failed.
+FAILED tests for simple open+read: path=/gamecopy.txt.
+(3 subtests passed and 1 subtests failed.)
+
+GOES PAST END OF BUFFER
+
+SOMETIMES CONTENTS FUCKED UP

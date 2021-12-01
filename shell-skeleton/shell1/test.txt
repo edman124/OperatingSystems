@@ -1,0 +1,46 @@
+g++ -Wall -Werror -pedantic -O2 -g -std=c++14 -fsanitize=address   -c -o main.o main.cc
+g++ -Wall -Werror -pedantic -O2 -g -std=c++14 -fsanitize=address -o msh main.o
+python3 shell_test.py
+Failed test 100 input redirections (with limit of 50 open files)
+Test input:
+  /bin/cat < test/input.txt
+  /bin/cat < test/input.txt
+  /bin/cat < test/input.txt
+  /bin/cat < test/input.txt
+  /bin/cat < test/input.txt
+  [plus 96 more lines, not shown]
+Actual stdout:
+  > This is an example input file.
+  Which has multiple lines.
+  /bin/cat Exit status: 0
+  > This is an example input file.
+  Which has multiple lines.
+  [plus 125 more lines, not shown]
+Actual stderr:
+  failed to open file
+  failed to open file
+  failed to open file
+  failed to open file
+  failed to open file
+  [plus 57 more lines, not shown]
+Expected stdout regular expression pattern: (extra lines allowed)
+  .*This is an example input file.
+  .*This is an example input file.
+  .*This is an example input file.
+  .*This is an example input file.
+  .*This is an example input file.
+  [plus 95 more lines, not shown]
+Expected stderr regular expression pattern:
+  <empty>
+(This test also has some important extra setup code that might do something like restrict the number of file descriptors or child processes that can be created.)
+Errors:
+  in stdout: could not find match for pattern [.*This is an example input file.] in ['Which has multiple lines.', '/bin/cat Exit status: 0', '> > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > > ']
+  in stderr: unexpected extra output [['failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', 'failed to open file', "==11189==Can't open /proc/11145/task for reading.", '==11145==LeakSanitizer has encountered a fatal error.', '==11145==HINT: For debugging, try setting environment variable LSAN_OPTIONS=verbosity=1:log_threads=1', '==11145==HINT: LeakSanitizer does not work under ptrace (strace, gdb, etc)']]
+71 tests passed and 1 tests failed.
+---
+Note on interpreting test output patterns:
+All expected values matched against a "regular expression" where:
+    .* means any string (including empty strings)
+    .+ means any string (excluding empty strings)
+    everything is matched case-insensitively
+
